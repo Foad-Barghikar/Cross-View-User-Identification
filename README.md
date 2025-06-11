@@ -1,6 +1,6 @@
 
 # Citing This Paper
-Please cite the following paper if you intend to use this code for your research.
+Please cite the following paper if you intend to use this code for your research.\n
 Under review
 # Cross View User Identification
 In the cross-view user identification approach, the objective is to identify the target vehicle in the image captured by the UAV among other objects and vehicles while the image of the target vehicle is also available.
