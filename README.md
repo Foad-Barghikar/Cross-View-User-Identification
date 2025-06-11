@@ -12,7 +12,8 @@ The loss function and some helper functions have been implemented in loss.py and
 ## Cross View Dataset
 The dataset contains six different locations including FiveWays, FourWays, Park, roundabout, straight road, and T-junction.  
 Each location has three different lighting conditions including daylight, dusk, and nighttime that are indicated by _0, _1, and _2, respectively.  
-Folders and file structures for FiveWays location in daylight conditions have been shown below:  
+Folders and file structures for FiveWays location in daylight conditions have been shown below:
+<pre>  
 .
 └── FiveWays_0/  
     ├── UAV/  
@@ -44,6 +45,7 @@ Folders and file structures for FiveWays location in daylight conditions have be
         │   ├── CamID_257.csv (vehicle rear camera data)  
         │   └── CamID_258.csv (vehicle left camera data)  
         └── VehicleID_138.csv (Vehicle data)  
+</pre>
 The folder structures are the same for other locations.  
 ## Introducing of Cameras' CSV File
 column name: description  
