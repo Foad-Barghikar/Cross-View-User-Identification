@@ -62,33 +62,34 @@ The folder structures are the same for other locations.
 |rotation_yaw     | yaw angle of the camera according to CARLA's axis system.|
 |rotation_roll    | roll angle of the camera according to CARLA's axis system.|
 ### Introducing of Vehicles' CSV File
-column name: description  
-frame: "frame index" that is identical for all data captured at the same frame.  
-theta: The heading angle of the vehicle relative to North.  
-location_X: X coordinate of the vehicle in the global Cartesian coordinate system of CARLA.  
-location_Y: Y coordinate of the vehicle in the global Cartesian coordinate system of CARLA.  
-location_Z: Z coordinate of the vehicle in the global Cartesian coordinate system of CARLA.  
-ImageBBoxCenter_X: X-coordinate of the vehicle bounding box center on the 1024x1024 image captured by the UAV camera in pixels.  
-ImageBBoxCenter_Y: Y-coordinate of the vehicle bounding box center on the 1024x1024 image captured by the UAV camera in pixels.  
-ImageBBoxVertex0_X: X-coordinate of the vehicle bounding box vertex0 on the 1024x1024 image captured by the UAV camera in pixels. (Vehicle 3D bounding box projected on 2D the UAV image)  
-ImageBBoxVertex0_Y: Y-coordinate of the vehicle bounding box vertex0 on the 1024x1024 image captured by the UAV camera in pixels. (Vehicle 3D bounding box projected on 2D the UAV image)  
-ImageBBoxVertex7_X: X-coordinate of the vehicle bounding box vertex7 on the 1024x1024 image captured by the UAV camera in pixels. (Vehicle 3D bounding box projected on 2D the UAV image)  
-ImageBBoxVertex7_Y: Y-coordinate of the vehicle bounding box vertex7 on the 1024x1024 image captured by the UAV camera in pixels. (Vehicle 3D bounding box projected on 2D the UAV image)  
-BBoxCenter_X = X-coordinate of the vehicle bounding box center in the global Cartesian coordinate system of CARLA.  
-BBoxCenter_Y = Y-coordinate of the vehicle bounding box center in the global Cartesian coordinate system of CARLA.  
-BBoxCenter_Z = Z-coordinate of the vehicle bounding box center in the global Cartesian coordinate system of CARLA.  
-BBoxVertex0_X = X-coordinate of the vehicle bounding box vertex0 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)  
-BBoxVertex0_Y = Y-coordinate of the vehicle bounding box vertex0 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)  
-BBoxVertex0_Z = Z-coordinate of the vehicle bounding box vertex0 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)  
-BBoxVertex7_X = X-coordinate of the vehicle bounding box vertex7 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)  
-BBoxVertex7_Y = Y-coordinate of the vehicle bounding box vertex7 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)  
-BBoxVertex7_Z = Z-coordinate of the vehicle bounding box vertex7 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)  
-forwardVector_X:  X element of the vector pointing forward according to the rotation of the vehicle.  
-forwardVector_Y:  Y element of the vector pointing forward according to the rotation of the vehicle.  
-forwardVector_Z:  Z element of the vector pointing forward according to the rotation of the vehicle.  
-rotation_pitch: pitch angle of the vehicle according to CARLA's axis system.  
-rotation_yaw: yaw angle of the vehicle according to CARLA's axis system.  
-rotation_roll: roll angle of the vehicle according to CARLA's axis system.  
+|    column name   |                          description                         |
+|:----------------:|:-------------------------------------------------------------|
+|frame             | "frame index" that is identical for all data captured at the same frame.|
+|theta             | The heading angle of the vehicle relative to North.|
+|location_X        | X coordinate of the vehicle in the global Cartesian coordinate system of CARLA.|
+|location_Y        | Y coordinate of the vehicle in the global Cartesian coordinate system of CARLA.|
+|location_Z        | Z coordinate of the vehicle in the global Cartesian coordinate system of CARLA.|
+|ImageBBoxCenter_X | X-coordinate of the vehicle bounding box center on the 1024x1024 image captured by the UAV camera in pixels.|
+|ImageBBoxCenter_Y | Y-coordinate of the vehicle bounding box center on the 1024x1024 image captured by the UAV camera in pixels.|
+|ImageBBoxVertex0_X| X-coordinate of the vehicle bounding box vertex0 on the 1024x1024 image captured by the UAV camera in pixels. (Vehicle 3D bounding box projected on 2D the UAV image)|
+|ImageBBoxVertex0_Y| Y-coordinate of the vehicle bounding box vertex0 on the 1024x1024 image captured by the UAV camera in pixels. (Vehicle 3D bounding box projected on 2D the UAV image)|
+|ImageBBoxVertex7_X| X-coordinate of the vehicle bounding box vertex7 on the 1024x1024 image captured by the UAV camera in pixels. (Vehicle 3D bounding box projected on 2D the UAV image)|
+|ImageBBoxVertex7_Y| Y-coordinate of the vehicle bounding box vertex7 on the 1024x1024 image captured by the UAV camera in pixels. (Vehicle 3D bounding box projected on 2D the UAV image)|
+|BBoxCenter_X      | X-coordinate of the vehicle bounding box center in the global Cartesian coordinate system of CARLA.|
+|BBoxCenter_Y      | Y-coordinate of the vehicle bounding box center in the global Cartesian coordinate system of CARLA.|
+|BBoxCenter_Z      | Z-coordinate of the vehicle bounding box center in the global Cartesian coordinate system of CARLA.|
+|BBoxVertex0_X     | X-coordinate of the vehicle bounding box vertex0 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)|
+|BBoxVertex0_Y     | Y-coordinate of the vehicle bounding box vertex0 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)|
+|BBoxVertex0_Z     | Z-coordinate of the vehicle bounding box vertex0 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)|
+|BBoxVertex7_X     | X-coordinate of the vehicle bounding box vertex7 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)|
+|BBoxVertex7_Y     | Y-coordinate of the vehicle bounding box vertex7 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)|
+|BBoxVertex7_Z     | Z-coordinate of the vehicle bounding box vertex7 in the global Cartesian coordinate system of CARLA. (3D bounding box provided by CARLA)|
+|forwardVector_X   | X element of the vector pointing forward according to the rotation of the vehicle.|
+|forwardVector_Y   | Y element of the vector pointing forward according to the rotation of the vehicle.|
+|forwardVector_Z   | Z element of the vector pointing forward according to the rotation of the vehicle.|
+|rotation_pitch    | pitch angle of the vehicle according to CARLA's axis system.|
+|rotation_yaw      | yaw angle of the vehicle according to CARLA's axis system.|
+|rotation_roll     | roll angle of the vehicle according to CARLA's axis system.|
 ### CARLA Website
 For more information about collected parameters by CARLA, please visit:
 [CARLA](https://carla.org/)
