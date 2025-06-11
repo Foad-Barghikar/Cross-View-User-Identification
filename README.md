@@ -1,9 +1,9 @@
 
 # Citing This Paper
-Please cite the following paper if you intend to use this code for your research.\\
+Please cite the following paper if you intend to use this code for your research.<br>
 Under review
 # Cross View User Identification
-In the cross-view user identification approach, the objective is to identify the target vehicle in the image captured by the UAV among other objects and vehicles while the image of the target vehicle is also available.
+In the cross-view user identification approach, the objective is to identify the target vehicle in the image captured by the UAV among other objects and vehicles while the image of the target vehicle is also available.  
 You can train the cross-view user identification model through cross_view_model_training.ipynb file.
 dataset.py is used to load and preprocess the dataset.
 In model.py, the model has been implemented.
