@@ -1,15 +1,15 @@
 
-# Citing This Paper
+## Citing This Paper
 Please cite the following paper if you intend to use this code for your research.<br>
 Under review
-# Cross View User Identification
+## Cross View User Identification
 In the cross-view user identification approach, the objective is to identify the target vehicle in the image captured by the UAV among other objects and vehicles while the image of the target vehicle is also available.  
 You can train the cross-view user identification model through cross_view_model_training.ipynb file.  
 dataset.py is used to load and preprocess the dataset.  
 In model.py, the model has been implemented.  
 model_cuda_timer.py is identical to model.py but with cuda timers added for latency evaluation.  
 The loss function and some helper functions have been implemented in loss.py and helperFunctions.py, respectively.  
-## Cross View Dataset
+### Cross View Dataset
 The dataset contains six different locations including FiveWays, FourWays, Park, roundabout, straight road, and T-junction.  
 Each location has three different lighting conditions including daylight, dusk, and nighttime that are indicated by _0, _1, and _2, respectively.  
 Folders and file structures for FiveWays location in daylight conditions have been shown below:
@@ -47,20 +47,21 @@ Folders and file structures for FiveWays location in daylight conditions have be
         └── VehicleID_138.csv (Vehicle data)  
 </pre>
 The folder structures are the same for other locations.  
-## Introducing of Cameras' CSV File
-column name: description  
-frame: "frame index" that is identical for all data captured at the same frame.  
-location_X: X coordinate of the camera in the global Cartesian coordinate system of CARLA.  
-location_Y: Y coordinate of the camera in the global Cartesian coordinate system of CARLA.  
-location_Z: Z coordinate of the camera in the global Cartesian coordinate system of CARLA.  
-w2c_ij: entry at (row=i,column=j) of world-to-camera transformation matrix converting world coordinates to camera coordinates.  
-forwardVector_X:  X element of the vector pointing forward according to the rotation of the camera.  
-forwardVector_Y:  Y element of the vector pointing forward according to the rotation of the camera.  
-forwardVector_Z:  Z element of the vector pointing forward according to the rotation of the camera.  
-rotation_pitch: pitch angle of the camera according to CARLA's axis system.  
-rotation_yaw: yaw angle of the camera according to CARLA's axis system.  
-rotation_roll: roll angle of the camera according to CARLA's axis system.  
-## Introducing of Vehicles' CSV File
+### Introducing of Cameras' CSV File
+|   column name   |                        description                         |
+|:---------------:|:-----------------------------------------------------------|
+|frame            |"frame index" that is identical for all data captured at the same frame.|
+|location_X       | X coordinate of the camera in the global Cartesian coordinate system of CARLA.|
+|location_Y       | Y coordinate of the camera in the global Cartesian coordinate system of CARLA.|
+|location_Z       | Z coordinate of the camera in the global Cartesian coordinate system of CARLA.|
+|w2c_ij           | entry at (row=i,column=j) of world-to-camera transformation matrix converting world coordinates to camera coordinates.|
+|forwardVector_X  |  X element of the vector pointing forward according to the rotation of the camera.|
+|forwardVector_Y  |  Y element of the vector pointing forward according to the rotation of the camera.|
+|forwardVector_Z  |  Z element of the vector pointing forward according to the rotation of the camera.|
+|rotation_pitch   | pitch angle of the camera according to CARLA's axis system.|
+|rotation_yaw     | yaw angle of the camera according to CARLA's axis system.|
+|rotation_roll    | roll angle of the camera according to CARLA's axis system.|
+### Introducing of Vehicles' CSV File
 column name: description  
 frame: "frame index" that is identical for all data captured at the same frame.  
 theta: The heading angle of the vehicle relative to North.  
@@ -88,11 +89,11 @@ forwardVector_Z:  Z element of the vector pointing forward according to the rota
 rotation_pitch: pitch angle of the vehicle according to CARLA's axis system.  
 rotation_yaw: yaw angle of the vehicle according to CARLA's axis system.  
 rotation_roll: roll angle of the vehicle according to CARLA's axis system.  
-## CARLA Website
+### CARLA Website
 For more information about collected parameters by CARLA, please visit:
 [CARLA](https://carla.org/)
-# YOLOv11 for Oriented Bounding Boxes Object Detection
+## YOLOv11 for Oriented Bounding Boxes Object Detection
 You can train the model through yolo_obb_model_training.ipynb file.  
-## YOLO OBB Dataset
+### YOLO OBB Dataset
 You might need to modify the path field in data.yalm based on the dataset directory on your system.  
 data.yalm is provided with the dataset.  
