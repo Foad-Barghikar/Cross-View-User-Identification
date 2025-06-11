@@ -92,8 +92,8 @@ class CVdataset(Dataset):
                 compassTheta = []
                 BBoxCenters = []
                 
-                vehPath = self.root / f"{scenario}_{realizationIdx}" / f"{scenario}_{realizationIdx}" / "Vehicles"
-                uavPath = self.root / f"{scenario}_{realizationIdx}" / f"{scenario}_{realizationIdx}" / "UAV"
+                vehPath = self.root / f"{scenario}_{realizationIdx}" / "Vehicles"
+                uavPath = self.root / f"{scenario}_{realizationIdx}" / "UAV"
                 
                 # Get the list of target vehicles
                 targetVehicleList = [entry.name for entry in os.scandir(vehPath) 
