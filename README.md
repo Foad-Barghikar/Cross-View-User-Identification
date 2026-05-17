@@ -11,7 +11,8 @@ model_cuda_timer.py is identical to model.py but with cuda timers added for late
 The loss function and some helper functions have been implemented in loss.py and helperFunctions.py, respectively.  
 ### Cross View Dataset
 The dataset contains six different locations including FiveWays, FourWays, Park, roundabout, straight road, and T-junction.  
-Each location has three different lighting conditions including daylight, dusk, and nighttime that are indicated by _0, _1, and _2, respectively. The dataset is available at: [Cross View Dataset]([https://carla.org/](https://www.kaggle.com/ds/6035066)
+Each location has three different lighting conditions including daylight, dusk, and nighttime that are indicated by _0, _1, and _2, respectively. The dataset is available at: [Cross View Dataset](https://www.kaggle.com/ds/6035066)
+
 Folders and file structures for FiveWays location in daylight conditions have been shown below:
 <pre>  
 .
